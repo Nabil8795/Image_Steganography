@@ -4,8 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Image Steganography Project</title>
+    <style>
+        .footer{
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            bottom: 0px;
+            padding: 15px;
+        }
+
+        .image-container{
+            position: relative;
+            width: 50%;
+            float: left;
+            text-align: center;
+            padding-top: 25px;
+            border: 50;
+        }
+        
+        .btnnn{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+    </style>
 </head>
 <body>
     {% include 'navigation.html' %}
+    <div class="image-container">
+        <img src="..\static\encrypt_image.webp" alt="" height="300" width="500" >
+        <a href="encryption/" class="btn btn-danger btnnn">Encrypt Now</a>
+    </div>
+
+    <div class="image-container">
+        <img src="..\static\decryp_image.webp" alt="" height="300" width="500" >
+        <a href="decryption/" class="btn btn-danger btnnn">Decrypt Now</a>
+    </div>
+    <footer class="footer">
+        <p>&copy; Self Softwares</p>
+    </footer>
 </body>
 </html>
